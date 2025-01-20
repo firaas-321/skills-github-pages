@@ -1,0 +1,117 @@
+
+body {
+ display: flex;
+            flex-direction: column;
+           justify-content: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f4f4f9;
+            color: #333;
+}
+ p {
+            text-align: justify;
+        }
+header,
+footer {
+  background-color: #222;
+  padding: 1rem;
+  display: flex;
+  justify-content:center;
+  align-items: center	;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s;
+}
+
+nav a:hover {
+  background-color: #fff;
+  color: #222;
+  border-radius: 5px;
+}
+.contactes {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s;
+}
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+li {
+            margin: 0.5rem;
+            padding: 0.5rem;
+            
+        }
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.photo {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #ccc;
+  background-image: url("https://cdn.glitch.global/57b7fad0-3123-4ec7-9104-367a69678bc6/mikey.png?v=1734654256247");
+  background-size: cover;
+  background-position: center;
+}
+
+.bio {
+  max-width: 400px;
+  text-align: left;
+}
+
+.bio h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #222;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .profile-section {
+    flex-direction: column;
+  }
+
+  .bio {
+    text-align: center;
+  }
+}

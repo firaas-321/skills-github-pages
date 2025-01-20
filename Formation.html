@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formations</title>
+    <script>
+        function toggleDescription(id) {
+            const desc = document.getElementById(id);
+            if (desc.style.display === "none" || desc.style.display === "") {
+                desc.style.display = "flex";
+            } else {
+                desc.style.display = "none";
+            }
+        }
+    </script>
+  <link rel= "stylesheet" href="Formations.css"/>
+</head>
+<body>
+    <header>
+      <nav>
+      <a href="index.html">Accueil</a>
+      <a href="Formations.html">Formations</a>
+      <a href="Projets.html">Projets</a>
+      <a href="cv.html">CV</a>
+    </nav>
+    </header>
+ <h1>Formations</h1>
+    <section class="container">
+        <!-- Division 1: Université -->
+        <section class="card">
+            <h2>Université - Baccalauréat en informatique</h2>
+            <p>Mon baccalauréat en informatique à l'UQTR m'a préparé à une carrière prometteuse. J'y ai appris à concevoir et produire des logiciels, tout en me spécialisant dans des domaines comme la programmation, l'analyse de données, la sécurité informatique et l'intelligence artificielle. j'ai fait un cheminement en sciences des données qui m'a permis de maîtriser les technologies modernes et l'apprentissage automatique.</p>
+          <p>
+            <br> J'ai suivis les cours suivants 
+          </p>
+
+            <ul>
+                <li onclick="toggleDescription('desc-INF1001')">INF1001 Programmation Web </li>
+                <div id="desc-INF1001" class="description">Le cours INF1001 initie les étudiants aux concepts fondamentaux du Web, leur permettant de créer et publier des sites en exploitant des technologies modernes. Il couvre les éléments essentiels du Web, la conception et la gestion de sites, la validation des pages, ainsi que la programmation côté client (HTML, CSS, JavaScript) et côté serveur (PHP).</div>
+
+                <li onclick="toggleDescription('desc-INF1002')">	Introduction à la programmation objet</li>
+                <div id="desc-INF1002" class="description">
+Le cours INF1002 initie les étudiants à l'informatique et à la programmation, en se concentrant sur la programmation impérative et orientée objet. Les étudiants apprennent les bases des langages de programmation, y compris les types de données, les structures de contrôle, les sous-programmes, et les objets. Ils découvrent comment développer des applications, choisir des algorithmes, et utiliser des structures de données comme les tableaux et les chaînes de caractères. Le cours couvre aussi l'introduction au paradigme objet, avec des concepts comme l'héritage. Les étudiants utilisent Java sur Eclipse pour des ateliers pratiques.</div>
+
+                <li onclick="toggleDescription('desc-INF1004')">INF1004	Structures de données et algorithmes </li>
+                <div id="desc-INF1004" class="description">Le cours INF1004 apprend aux étudiants à utiliser les structures de données comme les listes, piles, files, arbres, et graphes, ainsi qu’à programmer les algorithmes associés, comme le tri et la recherche. Il aborde les bases de la programmation orientée objet (encapsulation, héritage, polymorphisme) et explique la récursion en la comparant à l’itération. Les étudiants apprennent aussi à analyser la complexité des algorithmes et à tester leurs programmes.</div>
+
+                <li onclick="toggleDescription('desc-INF1006')">INF1006	Analyse et modélisation </li>
+                <div id="desc-INF1006" class="description">Le cours INF1006 initie les étudiants aux premières étapes du développement de systèmes informatiques, notamment l'analyse des besoins, la spécification et la modélisation des systèmes. Il met l'accent sur l'importance de l'analyse dans le processus de développement et utilise la méthode UML pour formaliser et valider les besoins. </div>
+
+                <li onclick="toggleDescription('desc-INF1007')">INF1007	Conception de logiciels (INF1006)</li>
+                <div id="desc-INF1007" class="description">Le cours INF1007 initie au processus de conception logicielle, en mettant l'accent sur son importance et ses défis. Il explore les principes, méthodes et notations utilisés pour concevoir des solutions logicielles de qualité, en suivant des étapes structurées. Les étudiants apprennent à appliquer des styles d'architecture logicielle, des patrons de conception (comme GRASP) et à créer des solutions réutilisables, maintenables et extensibles. Le cours aborde également la conception orientée objet, avec un focus sur la modularité, l'abstraction, la cohésion et le couplage. Des outils d’aide, la documentation et la revue de conception sont également étudiés, avec un projet pratique pour consolider les acquis.</div>
+                           
+                <li onclick="toggleDescription('desc-INF1008')">	INF1008	Analyse et conception d'algorithmes (ALG1001 ou PIF1005; INF1004)</li>
+                <div id="desc-INF1008" class="description">Le cours INF1008 permet de développer des compétences dans la création d'algorithmes corrects et efficaces,
+                  en analysant leur complexité spatiale et temporelle. Il couvre la résolution de récurrence, ainsi que l'efficacité des algorithmes de tri. Les étudiants explorent
+                  différentes stratégies de conception d'algorithmes, telles que les algorithmes voraces, diviser-pour-régner,
+                  la programmation dynamique, les algorithmes probabilistes et l'exploration de graphes.
+                  Le cours les aide à choisir l'algorithme le plus adapté à un problème spécifique.</div>
+                
+              <li onclick="toggleDescription('desc-INF1009')">INF1009	Réseaux d'ordinateurs I (SIF1015)</li>
+                <div id="desc-INF1009" class="description">Le cours INF1009 fournit les bases pour comprendre les architectures des réseaux informatiques et leur fonctionnement,
+                  notamment l'architecture en couches et les protocoles. Les concepts et le vocabulaire sont introduits progressivement à l’aide d’exemples simples.
+                  Le cours couvre la transmission des informations (circuits de données, protocoles de liaison, réseaux à circuits virtuels), le modèle des sept couches OSI,
+                  les réseaux locaux (Ethernet, Token Ring, sans fil) et les principes des réseaux IP.</div>
+                
+              <li onclick="toggleDescription('desc-INF1010')">INF1010	Réseaux d'ordinateurs II (en cours)</li>
+                <div id="desc-INF1010" class="description">Le cours INF1010 permet aux étudiants de se familiariser avec les concepts et les défis des nouvelles technologies de l'information et des communications. Il couvre les spécificités du réseau Internet, y compris les services, protocoles et applications, ainsi que l'administration des réseaux. Une introduction à la gestion sécurisée de l'information et aux mécanismes de sécurité informatique est également incluse. Les étudiants auront l'opportunité de définir, spécifier et réaliser des applications client-serveur sur Internet, tout en apprenant à administrer des services TCP/IP (comme DHCP et DNS) et des outils réseau (tels que les switches et routeurs).</div>
+               
+              <li onclick="toggleDescription('desc-INF1014')">INF1014	Aspects juridiques de l'informatique</li>
+                <div id="desc-INF1014" class="description">Le cours INF1014 permet à l'étudiant de se familiariser avec les aspects juridiques de l'informatique. Il couvre les principales lois qui touchent la pratique de l'informatique, notamment le droit d'auteur, le respect de la vie privée, l'accès à l'information, et le cadre juridique des technologies de l'information. Les étudiants apprendront également à analyser des situations de travail pour éviter des problèmes juridiques. Les notions abordées incluent la juridiction, la territorialité, le droit civil et le droit pénal, ainsi que les aspects légaux des licences de produits informatiques et ceux spécifiquement liés à l'Internet.</div>
+              
+              
+              <li onclick="toggleDescription('desc-INF1034')">INF1034 Introduction aux interfaces utilisateur (INF1002)</li>
+                <div id="desc-INF1034" class="description">Le cours INF1034 apprend aux étudiants à concevoir des interfaces utilisateur simples et à évaluer leur ergonomie. Il couvre les bases des interactions personne-machine, les principes de conception, l'utilisation d'outils graphiques et la gestion des événements. Les étudiants réalisent des tests et des enquêtes pour évaluer les interfaces, avec des exercices pratiques en Java.</div>
+              
+              <li onclick="toggleDescription('desc-INF1035')">INF1035 Concepts avancés en objet</li>
+                <div id="desc-INF1035" class="description">Le cours INF1035 enseigne les concepts clés de la programmation orientée objet, comme l'héritage, le polymorphisme, les classes abstraites, les interfaces et la généricité. Les étudiants apprennent à utiliser un environnement de développement (Eclipse ou Visual C#), à programmer de façon événementielle et par contrat, et à intégrer la programmation aspectuelle. Le cours explore aussi les design patterns (GoF), le refactoring, et la robustesse des applications. Les langages étudiés sont C# et Java</div>
+              
+              <li onclick="toggleDescription('desc-PIF1005')">PIF1005 Mathématiques pour informaticiens I</li>
+                <div id="desc-PIF1005" class="description">Le cours PIF1005 introduit les concepts mathématiques essentiels en informatique. Il couvre les rappels sur les nombres réels, les inégalités et les logarithmes, ainsi que la théorie des ensembles (relations, fonctions, relations d'ordre). Les étudiants apprennent les bases de la logique, les techniques de preuve, l'algèbre booléenne, les graphes et l'induction mathématique. </div>
+                
+              <li onclick="toggleDescription('desc-PIF1006')">PIF1006	Mathématiques pour informaticiens II</li>
+                <div id="desc-PIF1006" class="description">Le cours PIF1006 approfondit les mathématiques appliquées à l'informatique. Il couvre l'algèbre matricielle, les concepts d'analyse numérique (représentation des nombres, interpolation, approximation), ainsi que les langages formels et les automates (y compris les machines à états finis et les expressions régulières). Les étudiants étudient aussi la cryptographie, incluant les schémas de cryptage et l'authentification, ainsi que les techniques de codage et de compression des données (compression sans perte et avec perte, comme le code de Huffman et JPEG)</div>
+                
+              <li onclick="toggleDescription('desc-SIF1015')">SIF1015	Systèmes d'exploitation</li>
+                <div id="desc-SIF1015" class="description">Le cours SIF1015 initie les étudiants aux concepts fondamentaux des systèmes d'exploitation.
+                  Il couvre la gestion des processus et des threads,
+                  la communication inter-processus (tubes, files de messages, sockets, signaux), la gestion des entrées/sorties,
+                  ainsi que les systèmes de fichiers et la gestion de la mémoire.
+                  Les étudiants découvrent aussi la communication réseau par sockets.
+                  Ils appliquent les concepts théoriques à travers des projets de développement d'utilitaires
+                  dans des environnements ouverts comme UNIX, LINUX ou ANDROID.</div>
+                
+              <li onclick="toggleDescription('desc-SIF1053')">SIF1053	Architecture des ordinateurs</li>
+                <div id="desc-SIF1053" class="description">Le cours SIF1053 présente les éléments fondamentaux des architectures des ordinateurs modernes, y compris les architectures ARM, X86, et x86-64, ainsi que les périphériques. Il couvre les composantes principales des ordinateurs comme la mémoire, les circuits et la représentation de l'information. Les étudiants étudient l'unité de commande, les instructions machine, les notions d'adressage, la microprogrammation, l'unité arithmétique et logique, ainsi que les communications série et parallèle.</div>
+               
+              <li onclick="toggleDescription('desc-SMI1001')">SMI1001	Bases de données I</li>
+                <div id="desc-SMI1001" class="description">Le cours SMI1001 offre une introduction théorique et pratique aux concepts fondamentaux des bases de données, en particulier les bases de données relationnelles. Il couvre la modélisation des données, l'apprentissage du langage SQL et l'utilisation d'un SGBD moderne, permettant aux étudiants de comprendre et d'appliquer ces concepts dans des situations réelles.</div>
+                
+              <li onclick="toggleDescription('desc-STT1001')">STT1001	Probabilités et statistiques</li>
+                <div id="desc-STT1001" class="description">Le cours STT1001 couvre les statistiques de base pour les applications pratiques. Il inclut l'étude des séries statistiques (histogrammes, polygones), des mesures de tendance centrale et de dispersion, des moments, ainsi que des éléments de probabilités (variables aléatoires, distributions binomiales, hypergéométriques, normales et de Poisson). Le cours introduit également l'échantillonnage et les tests d'hypothèses simples.</div>
+              
+              <li onclick="toggleDescription('desc-TIN1003')">TIN1003	Science, technologie et société</li>
+                <div id="desc-TIN1003" class="description">Le cours TIN1003 aide les étudiants à comprendre comment les innovations scientifiques et technologiques affectent la société. Il encourage à réfléchir sur les avantages et les risques des nouvelles technologies. Les étudiants apprennent à évaluer les impacts sociaux des technologies, à prendre des décisions responsables et à comprendre les risques liés à l'adoption de nouvelles technologies, comme celles dans l'informatique et la robotique. Ils discutent aussi des principes à suivre pour que ces technologies soient bénéfiques et sûres pour la société.</div>
+              
+              <li onclick="toggleDescription('desc-SDD1001')">SDD1001	Introduction à la science des données</li>
+                <div id="desc-SDD1001" class="description">Le cours SDD1001 traite des langages modernes utilisés en sciences des données, notamment Python, ainsi que des bibliothèques de statistiques et de calcul symbolique. Il couvre les applications de ces langages dans les paradigmes de programmation orientée objet et fonctionnelle.</div>
+              
+              <li onclick="toggleDescription('desc-SDD1002')">SDD1002	Modélisation et simulation</li>
+                <div id="desc-SDD1002" class="description">Le cours SDD1002 couvre les techniques de simulation, modélisation et visualisation des données. Les étudiants explorent divers outils utilisés en sciences des données, tels que Python. Le cours aborde également les concepts liés à la généralisation, comme le sous-ajustement, le sur-ajustement et la validation croisée. Il inclut des approches comme la classification, la régression et l'agrégation (clustering).</div>
+              
+              <li onclick="toggleDescription('desc-SDD1003')">SDD1003	Gestion des entrepôts de données</li>
+                <div id="desc-SDD1003" class="description">Le cours SDD1003 traite des bases de données non relationnelles, qui ne suivent pas le modèle table/clé des bases de données relationnelles. Il permet aux étudiants de comprendre, modéliser et manipuler des données massives en utilisant les technologies modernes des bases de données non relationnelles.</div>
+              
+              <li onclick="toggleDescription('desc-SDD1004')">SDD1004	Apprentissage Automatique et applications (en cours)</li>
+                <div id="desc-SDD1004" class="description">Le cours SDD1004 aborde les algorithmes d'apprentissage automatique, y compris la machine à vecteurs de support (SVM), l'entraînement et la validation des modèles. Il introduit la modélisation et les algorithmes d'apprentissage basé sur les données, tels que l'apprentissage par l'exemple. Les principaux algorithmes étudiés sont le voisin le plus proche (KNN), la régression linéaire et généralisée, les mixtures de Gaussiennes, les processus Gaussiens et les méthodes de noyaux. Le cours inclut également une introduction à l'apprentissage profond.</div>
+              
+              <li onclick="toggleDescription('desc-CSE1001')">CSE1001	Introduction à la cybersécurité</li>
+                <div id="desc-CSE1001" class="description"></div>
+               
+              <li onclick="toggleDescription('desc-INF1020')">INF1020	Commerce électronique (en cours)</li>
+                <div id="desc-INF1020" class="description">Le cours INF1020 initie les étudiants aux concepts de base des affaires et du commerce électronique, tout en les mettant en pratique à travers la réalisation d'un projet de commerce électronique. Les objectifs secondaires incluent la gestion de projets d'équipe en informatique. Le cours couvre divers aspects du commerce électronique, notamment la digitalisation des affaires, les processus et stratégies B2B, le rôle des intermédiaires, l'environnement régulateur, les risques des systèmes non sécurisés, les normes et protocoles Internet, la cryptographie, les mécanismes de paiement en ligne, les agents intelligents, le marketing sur le Web, ainsi que des sujets d'actualité dans le domaine.</div>
+              
+              <li onclick="toggleDescription('desc-INF1030')">INF1030	Introduction au développement d'applications mobiles</li>
+                <div id="desc-INF1030" class="description">Le cours INF1030, "Introduction au développement d'applications mobiles", permet aux étudiants de comprendre le cycle complet de développement d'applications mobiles. En utilisant le langage Java, ils apprendront à créer des programmes, qu'ils soient standalone ou déployés sur des plateformes mobiles. L'accent est mis sur l'apprentissage des meilleures pratiques de développement pour améliorer l'efficacité du processus. Les étudiants découvriront également le fonctionnement de la machine virtuelle Dalvik, utilisée comme plateforme pour le développement d'applications Android.</div>
+               
+              <p>
+                <br>
+                Et des cours complementaire
+              </p>
+              
+              <li onclick="toggleDescription('desc-ROP1021')">ROP1021	Optimisation</li>
+                <div id="desc-ROP1021" class="description">Le cours ROP1021 permet d'acquérir des connaissances sur la programmation linéaire et la théorie des graphes et des réseaux. L'objectif est de savoir modéliser des problèmes et comprendre les algorithmes associés, ainsi que leur fonctionnement et application. En programmation linéaire, l'accent est mis sur les problèmes, leur modélisation, la résolution graphique et matricielle, ainsi que sur les algorithmes du simplexe, la dualité et l'analyse de sensibilité. En graphes et réseaux, le cours couvre les algorithmes de chemins, les problèmes d'ordonnancement, les flots de valeur maximale et coût minimum, les problèmes d'affectation, et d'autres applications.</div>
+              
+              <li onclick="toggleDescription('desc-MED1023')">	Pourquoi les maladies humaines existent et comment les prévenir?</li>
+                <div id="desc-MED1023" class="description">Le cours MED1023 aborde les maladies humaines majeures telles que le cancer, l'obésité, le diabète, les maladies cardiovasculaires, l'ostéoporose, l'arthrite, ainsi que les maladies neurodégénératives comme Alzheimer et Parkinson. Ces maladies représentent un défi croissant pour nos sociétés et sont influencées par des facteurs tels que la génétique, l'environnement, l'alimentation, l'industrialisation et les habitudes de vie. L'objectif est de fournir une mise à jour des connaissances scientifiques et épidémiologiques actuelles sur ces pathologies, d'expliquer leur progression et d'identifier des stratégies de prévention en modifiant certains aspects de notre environnement. Ce cours est une introduction accessible à tous, sans prérequis, et est proposé en ligne.</div>
+              
+              
+              
+          </ul>
+        </section>
+
+        <!-- Division 2: Autres formations -->
+        <section class="card">
+            <h2>Bac 2 série D</h2>
+            <p>La Terminale série D au Togo, ou Bac 2 série D, est axée sur les sciences expérimentales et les mathématiques</p>
+
+            <ul>
+                <li onclick="toggleDescription('desc-Mathématiques')">Mathématiques</li>
+                <div id="desc-Mathématiques" class="description">Calcul différentiel et intégral, probabilités, statistiques, et algèbre.</div>
+
+                <li onclick="toggleDescription('desc-Physique-Chimie')">Physique-Chimie</li>
+                <div id="desc-Physique-Chimie" class="description">Concepts fondamentaux renforcés par des travaux pratiques.</div>
+
+                <li onclick="toggleDescription('desc-SVT')">SVT</li>
+                <div id="desc-SVT" class="description">Biologie et géologie, axées sur des processus biologiques et géologiques.</div>
+
+                <li onclick="toggleDescription('desc-Philosophie')">Philosophie</li>
+                <div id="desc-Philosophie" class="description">Développement de la pensée critique sur des questions existentielles et éthiques.</div>
+
+                <li onclick="toggleDescription('desc-Français')">Français</li>
+                <div id="desc-Français" class="description">Maîtrise de la langue, littérature et analyse de textes.</div>
+              
+                <li onclick="toggleDescription('desc-Anglais')">Anglais</li>
+                <div id="desc-Anglais" class="description">apprentissage des bases de la grammaire et de la conjugaison anglaise </div>
+              
+                <li onclick="toggleDescription('desc-Histoire-Géographie')">Histoire-Géographie</li>
+                <div id="desc-Histoire-Géographie" class="description">chapitres sur l'histoire mondiale. </div>
+            </ul>
+        </section>
+    </section>
+   <footer >
+    <nav>
+    <div class="contactes">
+        <h3>Contact</h3>
+        <p>Email : <a href="mailto:firaasewetola@gmail.com" >firaasewetola@gmail.com</a></p>
+        <p>Téléphone : +1 8199790434</p>
+        <p>Adresse : 210A, Rue Lucien beaudry, Trois-riviere, Québec, Canada</p>
+    </div>
+    </nav>
+  </footer>
+</body>
+</html>

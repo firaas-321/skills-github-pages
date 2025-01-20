@@ -2,3 +2,50 @@
 title: Welcome to my blog
 ---
 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="Formations.html">Formations</a>
+      <a href="Projets.html">Projets</a>
+      <a href="cv.html">CV</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="content">
+      <section class="profile-section">
+        <div class="photo"></div>
+        <div class="bio">
+          <h2>Bienvenue sur mon Portfolio</h2>
+          <p>
+            Actuellement étudiant en informatique à l'UQTR avec une spécialisation en sciences des données, je suis passionné par la programmation et ouvert à participer à divers projets. J’aime explorer de nouvelles idées et m’adapter à différents domaines, même en dehors de ma spécialisation. Je serais ravi de vous offrir mes services et de contribuer à créer de grandes choses ensemble.
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer >
+    <nav>
+    <div class="contactes">
+        <h3>Contact</h3>
+        <p>Email : <a href="mailto:firaasewetola@gmail.com" >firaasewetola@gmail.com</a></p>
+        <p>Téléphone : +1 8199790434</p>
+        <p>Adresse : 210A, Rue Lucien beaudry, Trois-riviere, Québec, Canada</p>
+    </div>
+    </nav>
+  </footer>
+    <script src="app.js"></script>
+</body>
+</html>
+
